@@ -8,7 +8,6 @@ const Register = () => {
 
     const handleInputChange = (e) => setInput(e.target.value)
 
-    const isError = input === ''
 
     return(
         <Flex
@@ -18,21 +17,21 @@ const Register = () => {
             w='100%'
             h='90%'
         >
-            <Text 
+            <Text
                 as='h1'
                 fontFamily='Arial'
                 fontWeight='bold'
-                fontSize={28} 
+                fontSize={28}
             >
                 CADASTRO
             </Text>
 
 
-            <Input 
+            <Input
                 id='name'
-                placeholder='Nome' 
-                size='xs' 
-                type='name'
+                placeholder='Nome'
+                size='xs'
+                type='text'
                 value={input}
                 onChange={handleInputChange}
                 border='none'
@@ -42,11 +41,11 @@ const Register = () => {
                 color='#FFFFFF'
                 p='10px'
                 w="80%"
-                h='40px'   
+                h='40px'
             />
 
-           
-            <Input 
+
+            <Input
                 id='email'
                 placeholder='Email' 
                 size='xs' 
@@ -67,7 +66,7 @@ const Register = () => {
                 id='senha'
                 placeholder='Senha' 
                 size='xs' 
-                type='senha'
+                type='password'
                 value={input}
                 onChange={handleInputChange}
                 border='none'
